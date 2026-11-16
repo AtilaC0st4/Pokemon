@@ -1,20 +1,56 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import React, { useEffect, useState } from 'react';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 export default function App() {
+
+  
+
   return (
+
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+      <Text style={styles.titulo}> Pokemon </Text>
+
     </View>
+
   );
+
 }
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 25,
+    backgroundColor: '#f5f5f5'
   },
+
+  titulo: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 25
+  },
+
+  card: {
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 25,
+    borderRadius: 15,
+    width: '100%'
+  },
+
+  imagem: {
+    width: 180,
+    height: 180
+  },
+
+  nome: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10
+  }
+
 });
